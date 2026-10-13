@@ -1,0 +1,4 @@
+reference/
+app/build/bin/
+app/frontend/node_modules/
+app/frontend/dist/

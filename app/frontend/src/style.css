@@ -1,0 +1,55 @@
+/* Palette derived from the K10S logo: navy outline, royal-blue wheel, cyan ring. */
+:root {
+    --bg: #07111f;
+    --panel: #0b1a30;
+    --panel-2: #10233f;
+    --border: #1a3156;
+    --text: #e8f1ff;
+    --text-2: #b9c8e0;
+    --muted: #7f93b5;
+    --accent: #06d5f7;
+    --accent-rgb: 6, 213, 247;
+    --royal: #326edc;
+    --royal-rgb: 50, 110, 220;
+    --code-bg: #050c18;
+    --ok: #3fd68a;
+    --warn: #f2b544;
+    --bad: #ff5d6c;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: rgba(var(--royal-rgb), 0.45);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #27447a;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
